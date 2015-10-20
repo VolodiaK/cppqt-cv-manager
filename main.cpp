@@ -56,7 +56,7 @@ public:
     }
     bool isValid() const
     {
-        bool k = true;
+        bool k{true};
         for(int i=0; i<mPreviousJobs.size();i++)
         {
             if(!mPreviousJobs[i].isValid())
@@ -72,7 +72,7 @@ public:
 
     void print() const
     {
-        int i=0;
+        int i{0};
         if (isValid())
         {
             cout << mName << " (" << mBirthYear << ")" << endl;
@@ -104,7 +104,7 @@ public:
 
     bool experience()
     {
-        int expJob=0;
+        int expJob{0};
         int sizeExperience = mPreviousJobs.size();
         for (int i=0; i<sizeExperience;i++)
         {
